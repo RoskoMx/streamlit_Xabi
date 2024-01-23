@@ -5,7 +5,7 @@
 
 %%writefile app.py Esto se hace cuasndo estamos usando Colab"""
 
-pip intsall streamlit-lottie
+!pip intsall streamlit-lottie
 
 import streamlit as st
 import requests
