@@ -44,7 +44,7 @@ with st.container():
     st.write("[Youtube >](https://www.youtube.com/watch?v=_vnF1nYcUys)")
   
   with right_column: #Aquí tiene que aparecer la animación lottie
-    #st_lottie(lottie_coding, height=300, key="coding") #nombre, altura 300, key
+    st_lottie(lottie_coding, height=300, key="coding") #nombre, altura 300, key
 
 with st.container():
   st.write("--")
