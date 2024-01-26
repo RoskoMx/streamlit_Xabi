@@ -4,22 +4,23 @@
 
 
 %%writefile app.py Esto se hace cuasndo estamos usando Colab"""
+import json
 
 import streamlit as st
 import requests
-#from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
 from PIL import Image
 
 
 #Funcion para generar nuestra animacion. La podemos sacar de lottiefile.com
-"""def load_lottieurl(url): #Nombre y parámetro
+def load_lottieurl(url: str): #Nombre y parámetro
   r = requests.get(url) #Guardamos la url
   if r.status_code != 200: #Si la solicitu de la animación no está disponible
     return None
   return r.json() #En caso contrario. Función que mandamos a llamar más abajo"""
 
 #Creamos dos variables una para la imagen y otra para la animación
-#lottie_coding = load_lottieurl("https://lottie.host/715c7d3a-9133-4bb0-a617-0a4693f610c9/GdFoQ9wiAi.json")
+lottie_coding = load_lottieurl("https://lottie.host/715c7d3a-9133-4bb0-a617-0a4693f610c9/GdFoQ9wiAi.json")
 imagen_video = Image.open("rosko.jpg") #Pon la ruta de tu imagen
 
 with st.container():
